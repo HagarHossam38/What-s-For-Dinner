@@ -1,0 +1,237 @@
+/* sm 576px -->      */
+@media screen and (min-width:576px) {
+    .sm-50 {
+        width: 50%;
+    }
+
+    .sm-33 {
+        width: 33.333%;
+    }
+
+    .sm-25 {
+        width: 25%;
+    }
+
+    .sm-20 {
+        width: 20%;
+    }
+
+    .sm-16 {
+        width: 16.66%;
+    }
+
+}
+
+/* md 768px  -->    */
+@media screen and (min-width:768px) {
+    .md-50 {
+        width: 50%;
+    }
+
+    .md-33 {
+        width: 33.333%;
+    }
+
+    .md-25 {
+        width: 25%;
+    }
+
+    .md-20 {
+        width: 20%;
+    }
+
+    .md-16 {
+        width: 16.66%;
+    }
+
+    /*Navbar Start*/
+    #navbar ul.navbar-nav {
+        border-top: none;
+        margin-top: 0px;
+        padding-block: 0px;
+    }
+
+    #navbar .identity h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #navbar .identity p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #navbar .navbar-nav li .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /*Navbar End*/
+    #main #recipe-display-section .visual-part .extra-info {
+        padding: 24px;
+    }
+
+    #main #recipe-display-section .text-part .tags-section {
+        order: 0;
+    }
+
+    /*Fonts*/
+    #main #recipe-display-section .text-part .random-btn button {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 24px;
+    }
+
+    #main #recipe-display-section .visual-part .ratings :nth-child(2) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #main #recipe-display-section .visual-part .ratings :nth-child(3) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #main #recipe-display-section .visual-part .extra-info i {
+        font-size: 24px;
+    }
+
+    #main #recipe-display-section .visual-part .extra-info p:nth-child(2) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #main #recipe-display-section .visual-part .extra-info p:nth-child(3) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #main #recipe-display-section .text-part h3 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    #main #recipe-display-section .text-part p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    #main #recipe-display-section .text-part #time-warning div :nth-child(1) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #main #recipe-display-section .text-part #time-warning div :nth-child(2) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    #nutrition-section #nutrition-list .nutrition-card .inner div span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #nutrition-section #nutrition-list .nutrition-card .inner span {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+/* lg 992px  -->       */
+@media screen and (min-width:992px) {
+    .lg-50 {
+        width: 50%;
+    }
+
+    .lg-33 {
+        width: 33.333%;
+    }
+
+    .lg-25 {
+        width: 25%;
+    }
+
+    .lg-20 {
+        width: 20%;
+    }
+
+    .lg-16 {
+        width: 16.66%;
+    }
+
+    #main #recipe-display-section #recipeHolder {
+        height: 750px;
+    }
+
+    #main #recipe-display-section .visual-part {
+        height: 100%;
+    }
+
+    #main #recipe-display-section .visual-part {
+        padding: 40px;
+    }
+
+    #main #recipe-display-section .text-part {
+        padding: 40px;
+    }
+
+    #main #recipe-display-section .visual-part .extra-info i {
+        font-size: 24px;
+    }
+}
+
+/* xl 1200px  -->       */
+@media screen and (min-width:1200px) {
+    .xl-50 {
+        width: 50%;
+    }
+
+    .xl-33 {
+        width: 33.333%;
+    }
+
+    .xl-25 {
+        width: 25%;
+    }
+
+    .xl-20 {
+        width: 20%;
+    }
+
+    .xl-16 {
+        width: 16.66%;
+    }
+
+}
+
+/* xxl 1400px  -->       */
+@media screen and (min-width:1400px) {
+    .xxl-50 {
+        width: 50%;
+    }
+
+    .xxl-33 {
+        width: 33.333%;
+    }
+
+    .xxl-25 {
+        width: 25%;
+    }
+
+    .xxl-20 {
+        width: 20%;
+    }
+
+    .xxl-16 {
+        width: 16.66%;
+    }
+
+}

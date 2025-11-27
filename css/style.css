@@ -1,0 +1,586 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #fff7ed, #fffbeb, #fefce8);
+}
+
+* {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*==================================================*/
+/*Nav bar Start*/
+#navbar {
+    padding: 16px 24px;
+    border-bottom: 1px #ffedd4 solid;
+    /* box-shadow:
+        0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px -1px rgba(0, 0, 0, 0.1); */
+
+}
+
+.navbar {
+    border: none;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#navbar .container-xxl {
+    max-width: 1280px;
+}
+
+.navbar-toggler i {
+    font-size: 24px;
+    color: #4A5565;
+    transition: all 0.2s;
+}
+
+.navbar-toggler i:hover {
+    color: #F54A00;
+}
+
+#navbar .identity .logo-icon-container {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to bottom right, #ff6900, #fb2c36);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .identity h1 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #101828;
+}
+
+#navbar .identity p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #6a7282;
+}
+
+#navbar ul.navbar-nav {
+    border-top: 1px solid #ffedd4;
+    margin-top: 16px;
+    padding-block: 16px;
+}
+
+#navbar .navbar-nav li .profile-img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ffb86a;
+}
+
+#navbar ul li p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #4A5565;
+}
+
+#navbar .navbar-nav li i,
+#navbar .navbar-nav li p {
+    color: #4A5565;
+    transition: all 0.1s;
+}
+
+#navbar .navbar-nav li:hover i,
+#navbar .navbar-nav li:hover p {
+    color: #F54A00;
+}
+
+
+/*Nav bar End*/
+
+
+/*==================================================*/
+/*main section Start*/
+#main .container-xxl {
+    padding: 32px 24px;
+    max-width: 1280px;
+}
+
+#main #recipe-display-section {
+    border: 1px solid #ffedd4;
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    margin-bottom: 32px;
+
+}
+
+
+#main #recipe-display-section .visual-part {
+    height: 400px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+#main #recipe-display-section .visual-part {
+    padding: 20px;
+}
+
+/*Ratings bar*/
+#main #recipe-display-section .visual-part .ratings {
+    top: 24px;
+    left: 24px;
+    padding: 8px 16px;
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+#main #recipe-display-section .visual-part .ratings :nth-child(2) {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #101828;
+}
+
+#main #recipe-display-section .visual-part .ratings :nth-child(3) {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #6a7282;
+}
+
+/*Extra info bar*/
+#main #recipe-display-section .visual-part .extra-info {
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, .99);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+#main #recipe-display-section .visual-part .extra-info i {
+    font-size: 18px;
+}
+
+#main #recipe-display-section .visual-part .extra-info .prep-time i {
+    color: #FF6900;
+}
+
+#main #recipe-display-section .visual-part .extra-info .cook-time i {
+    color: #FB2C36;
+}
+
+#main #recipe-display-section .visual-part .extra-info .servings i {
+    color: #2B7FFF;
+}
+
+#main #recipe-display-section .visual-part .extra-info p:nth-child(2) {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #6a7282;
+}
+
+#main #recipe-display-section .visual-part .extra-info p:nth-child(3) {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #101828;
+}
+
+/*============================*/
+/*right side*/
+#main #recipe-display-section .text-part {
+    padding: 20px;
+}
+
+/***Scrollbar****/
+#main #recipe-display-section .text-part {
+    scrollbar-width: thin;
+    scrollbar-color: #fe886a4d transparent;
+}
+
+#main #recipe-display-section .text-part::-webkit-scrollbar-thumb:hover {
+    background-color: #B46653;
+}
+
+/*3shan ba2y el browsers*/
+#main #recipe-display-section .text-part::-webkit-scrollbar {
+    width: 6px;
+}
+
+#main #recipe-display-section .text-part::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#main #recipe-display-section .text-part::-webkit-scrollbar-thumb {
+    background-color: #fe886a4d;
+    border-radius: 10px;
+}
+
+#main #recipe-display-section .text-part::-webkit-scrollbar-thumb:hover {
+    background-color: #B46653;
+}
+
+/*===========*/
+#main #recipe-display-section .text-part div:nth-child(1) {
+    margin-bottom: 12px;
+}
+
+#main #recipe-display-section .text-part .recipe-badge {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    padding: 4px 12px;
+}
+
+#main #recipe-display-section .text-part #difficulty-level {
+    color: #09873D;
+    background-color: #DBFCE7;
+}
+
+#main #recipe-display-section .text-part #category {
+    color: #1447E6;
+    background-color: #DBEAFE;
+}
+
+#main #recipe-display-section .text-part h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #101828;
+    padding-bottom: 8px;
+}
+
+#main #recipe-display-section .text-part p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4a5565;
+}
+
+#main #recipe-display-section .text-part .tags-section {
+    order: -1;
+}
+
+#main #recipe-display-section .text-part .main-icon.icon-container {
+    width: 48px;
+    height: 48px;
+    background-color: #ffedd4;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#main #recipe-display-section .text-part .main-icon.icon-container:hover {
+    background-color: #FFD7A8;
+}
+
+#main #recipe-display-section .text-part .main-icon.icon-container i {
+    font-size: 16px;
+    color: #f54a00;
+}
+
+#main #recipe-display-section .text-part #time-warning {
+    background-color: #fef2f2;
+    border-left: 4px solid #fb2c36;
+}
+
+#main #recipe-display-section .text-part #time-warning i {
+    color: #FB2C36;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+#main #recipe-display-section .text-part #time-warning div :nth-child(1) {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #9f0712;
+}
+
+#main #recipe-display-section .text-part #time-warning div :nth-child(2) {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #e7000b;
+}
+
+/*Navs & tabs*/
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+    --bs-nav-tabs-link-active-color: #F54A00;
+    border-bottom: 1px solid #ebe6e7;
+}
+
+.nav {
+    --bs-nav-link-color: #6A7282;
+    --bs-nav-link-hover-color: #364153;
+}
+
+.nav-link {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #F54A00;
+}
+
+/*===========================*/
+/*Navs & tabs*/
+.tab-pane {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* Scrollbar */
+.tab-pane {
+    scrollbar-width: thin;
+    scrollbar-color: #fe886a4d transparent;
+}
+
+.tab-pane::-webkit-scrollbar-thumb:hover {
+    background-color: #B46653;
+}
+
+/*3shan ba2y el browsers*/
+.tab-pane::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tab-pane::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tab-pane::-webkit-scrollbar-thumb {
+    background-color: #fe886a4d;
+    border-radius: 10px;
+}
+
+.tab-pane::-webkit-scrollbar-thumb:hover {
+    background-color: #B46653;
+}
+
+/*=======================*/
+
+
+#main #recipe-display-section .text-part .tab-pane span,
+#main #recipe-display-section .text-part .tab-pane p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #364153;
+
+}
+
+/*Ingredients*/
+
+#main #recipe-display-section .text-part #ingredients-tab-pane #ingredients-section {
+    background: linear-gradient(to bottom right, #fff7ed, #fffbeb);
+}
+
+#main #recipe-display-section .text-part #ingredients-tab-pane #ingredients-section ul li {
+    margin-bottom: 12px;
+}
+
+#main #recipe-display-section .text-part #ingredients-tab-pane #ingredients-section ul li .icon-container {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: #ff6900;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+/*===========================*/
+/*Navs & tabs*/
+/*instructions*/
+
+
+#main #recipe-display-section .text-part #instructions-tab-pane #instructions-section ul li {
+    margin-bottom: 12px;
+}
+
+#main #recipe-display-section .text-part #instructions-tab-pane #instructions-section ul li .icon-container {
+    min-width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: white;
+    background-color: #ff6900;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+#main #recipe-display-section .text-part #instructions-tab-pane #instructions-section ul li p {
+    padding-top: 8px;
+}
+
+#main #recipe-display-section .text-part #instructions-tab-pane #instructions-section ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*===========================*/
+/*===========================*/
+/*Navs & tabs*/
+/*nutrition*/
+/*#main #recipe-display-section .text-part*/
+#nutrition-section #nutrition-list .nutrition-card .inner {
+    background-color: #fbf9fa;
+    margin-bottom: 16px;
+}
+
+#nutrition-section #nutrition-list .nutrition-card .inner .icon-container {
+    width: 40px;
+    height: 40px;
+    margin: 0 12px 0 0;
+    border-radius: 8px;
+    background-color: #09873D;
+}
+
+#nutrition-section #nutrition-list .nutrition-card .inner div span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #364153;
+
+}
+
+#nutrition-section #nutrition-list .nutrition-card .inner span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #101828;
+}
+
+/*Special design*/
+#nutrition-section #nutrition-list .calories-card .inner .icon-container {
+    color: #F54A00;
+    background-color: #FFEDD4;
+}
+
+#nutrition-section #nutrition-list .protein-card .inner .icon-container {
+    color: #155DFC;
+    background-color: #DBEAFE;
+}
+
+#nutrition-section #nutrition-list .carbohydrates-card .inner .icon-container {
+    color: #D08700;
+    background-color: #FEF9C2;
+}
+
+#nutrition-section #nutrition-list .fat-card .inner .icon-container {
+    color: #E7000B;
+    background-color: #FFE2E2;
+}
+
+#nutrition-section #nutrition-list .fiber-card .inner .icon-container {
+    color: #00A63E;
+    background-color: #DBFCE7;
+}
+
+#nutrition-section #nutrition-list .sodium-card .inner .icon-container {
+    color: #E60076;
+    background-color: #FCE7F3;
+}
+
+/*===========================*/
+/*Navs & tabs*/
+/*tips*/
+#main #recipe-display-section .text-part #tips-section #tips-list div {
+    background-color: #fffbeb;
+    border-radius: 12px;
+    border-left: 4px solid #ffb900;
+    margin-bottom: 16px;
+}
+
+#main #recipe-display-section .text-part #tips-section #tips-list div i {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-right: 12px;
+    color: #e17100;
+}
+
+/*===========================*/
+
+/**Random button*/
+#main #recipe-display-section .text-part .random-btn {
+    margin-top: 32px;
+    border-top: 1px solid #ebe6e7;
+}
+
+#main #recipe-display-section .text-part .random-btn button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    background: linear-gradient(to bottom right, #ff6900, #fb2c36);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.3s;
+    border: none;
+}
+
+#main #recipe-display-section .text-part .random-btn button i {
+    margin-right: 4px;
+}
+
+#main #recipe-display-section .text-part .random-btn button:hover {
+    background: linear-gradient(to bottom right, #f54a00, #e7000b);
+    transform: scale(105%);
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+}
