@@ -8,6 +8,11 @@ body {
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #fe886a;
+    color: white;
+}
+
 h1,
 h2,
 h3,
